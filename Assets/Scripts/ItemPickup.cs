@@ -12,7 +12,7 @@ public class ItemPickup : MonoBehaviour
     private bool hasObject = false;
     void OnTriggerEnter(Collider other)
     {
-        
+        Debug.Log("Beaver");
     }
 
     private void Update()
