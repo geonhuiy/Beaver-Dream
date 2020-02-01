@@ -22,6 +22,8 @@ public class BeaverItemPickup : MonoBehaviour
         if (hasObject)
         {
             currentHeldObj.transform.position = this.transform.position;
+            Vector3 rotation = new Vector3(currentHeldObj.transform.eulerAngles.x, this.transform.eulerAngles.y, currentHeldObj.transform.eulerAngles.z);
+            currentHeldObj.transform.rotation = Quaternion.Euler(rotation);
         }
     }
 }
