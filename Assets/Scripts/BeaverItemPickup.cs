@@ -10,7 +10,6 @@ public class BeaverItemPickup : MonoBehaviour
     {
         hasObject = true;
         currentHeldObj = other.gameObject;
-
         //objTransform.transform.parent = transform;
         //objTransform.transform.position = holdSlot.transform.position;
     }
@@ -22,6 +21,7 @@ public class BeaverItemPickup : MonoBehaviour
             currentHeldObj.transform.position = this.gameObject.transform.GetChild(0).transform.position;
             Vector3 rotation = new Vector3(currentHeldObj.transform.eulerAngles.x, this.transform.eulerAngles.y, currentHeldObj.transform.eulerAngles.z);
             currentHeldObj.transform.rotation = Quaternion.Euler(rotation);
+            //currentHeldObj.GetComponent<Collider>().enabled = false;
         }
     }
 }

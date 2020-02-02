@@ -33,7 +33,8 @@ public class Movement : MonoBehaviour
             Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit, Mathf.Infinity))
             {
-                if (hit.transform.gameObject.gameObject.gameObject.layer == LayerMask.NameToLayer("Terrain"))
+                if (hit.transform.gameObject.layer == LayerMask.NameToLayer("Terrain")
+                || hit.transform.gameObject.layer == LayerMask.NameToLayer("Pickup"))
                 {
                     navMeshAgent.SetDestination(hit.point);
                 }
