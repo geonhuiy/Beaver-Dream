@@ -27,7 +27,7 @@ public class Movement : MonoBehaviour
     {
         RaycastHit hit;
         // Touch input on mobile devices
-        /*foreach (Touch touch in Input.touches) {
+        foreach (Touch touch in Input.touches) {
             Ray ray = mainCamera.ScreenPointToRay(touch.position);
             if (Physics.Raycast(ray, out hit, Mathf.Infinity)) {
                 // Nav agent movement
@@ -35,10 +35,10 @@ public class Movement : MonoBehaviour
                     navMeshAgent.SetDestination(hit.point);
                 }
             }
-        }*/
+        }
 
         // Mouse input on computer for debugging
-        if (Input.GetMouseButtonUp(0))
+        /*if (Input.GetMouseButtonUp(0))
         {
             Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit, Mathf.Infinity))
@@ -49,6 +49,6 @@ public class Movement : MonoBehaviour
                     navMeshAgent.SetDestination(hit.point);
                 }
             }
-        }
+        }*/
     }
 }
