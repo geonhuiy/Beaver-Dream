@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _serilizableObject:
   - _name: Cubes
-    _serilizableObject: {fileID: 11400000, guid: 7ed9361169b86c84fa5ca477b4d7eda1,
+    _serilizableObject: {fileID: 11400000, guid: 4f6461ab2cddbde47bc663f05424fadb,
       type: 2}
   - _name: Tire1
-    _serilizableObject: {fileID: 11400000, guid: eca8e857c08604e69bc9a26816e7240c,
+    _serilizableObject: {fileID: 11400000, guid: 5c4d04ec807385d48ad0c35e30f3bb36,
       type: 2}
   - _name: Spheres
     _serilizableObject: {fileID: 11400000, guid: d9856b2106dd87d46b32270da2661559,

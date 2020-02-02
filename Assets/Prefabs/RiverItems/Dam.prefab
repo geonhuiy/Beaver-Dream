@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1564193587056262314}
   - component: {fileID: 1564193587056262313}
   - component: {fileID: 7757834475897303636}
+  - component: {fileID: -1081126859840239129}
   m_Layer: 0
   m_Name: Dam
   m_TagString: Untagged
@@ -108,3 +109,31 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.4144094, y: 11.73672, z: 1.6006546}
   m_Center: {x: 0.0000000654996, y: -4.8149273e-11, z: -0.56583875}
+--- !u!114 &-1081126859840239129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564193587056262312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd717002be99f4d32bb51e0524d79208, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthText: {fileID: 0}
+  damNoDMG: {fileID: 1420156059905244524, guid: 466ed0ead7e064d859b831f5953eca44,
+    type: 3}
+  damLowDMG: {fileID: 4000530637271158135, guid: 6e283f7c255f74eaaa54d9f2a46b456b,
+    type: 3}
+  damHighDMG: {fileID: 6524797062029943673, guid: 4f7befb51ed624e599d3358eaf0693a2,
+    type: 3}
+  damDestroyed: {fileID: 6918957151550212026, guid: 8cf5c12f9663d4a208309376494207e2,
+    type: 3}
+  lowDamage: 5
+  mediumDamage: 10
+  highDamage: 20
+  lowHeal: 7
+  mediumHeal: 12
+  highHeal: 25
+  damHealth: 50

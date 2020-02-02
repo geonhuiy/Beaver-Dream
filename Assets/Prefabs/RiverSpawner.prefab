@@ -43,7 +43,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05c08750b840f9d4a897d1445526e6cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  seconds: 1
   gos:
-  - {fileID: 1499078281927830800, guid: 6a4587268c8bc47d089628fc7a83f504, type: 3}
+  - {fileID: 5870108104175633942, guid: 6e39c2cfbe07f4796b7a5ec5b240edd3, type: 3}
   - {fileID: 1059995554359797572, guid: f1daf0b417c5f4a89abe18d60ecde354, type: 3}
-  numberstospawn: 521
+  - {fileID: 1499078281927830800, guid: 6a4587268c8bc47d089628fc7a83f504, type: 3}
+  numberstospawn: 1
