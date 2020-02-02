@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Pickup
+  - Cube
+  - Sphere
+  - Tire
+  - Rock
+  - Twig
   layers:
   - Default
   - TransparentFX

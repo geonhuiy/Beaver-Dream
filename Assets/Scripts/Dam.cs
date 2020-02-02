@@ -19,7 +19,7 @@ public class Dam : MonoBehaviour
 
 
 
-    public float damHealth = 50f;
+    public float damHealth = 500f;
    
     private void OnTriggerEnter(Collider other)
     {
@@ -27,9 +27,9 @@ public class Dam : MonoBehaviour
 
         if (other.gameObject.tag == "Sphere")
         {
-            damHealth += highHeal;
+            damHealth -= lowDamage;
             Debug.Log("This is other Spere");
-            healthText.color = Color.green;
+            healthText.color = Color.red;
         }
         if (other.gameObject.tag == "Cube")
         {
@@ -42,6 +42,17 @@ public class Dam : MonoBehaviour
             damHealth -= mediumDamage;
             Debug.Log("This is other Cube");
             healthText.color = Color.red;
+        }
+        if (other.gameObject.tag == "Rock") {
+            damHealth += highHeal;
+            Destroy(other.gameObject);
+            healthText.color = Color.green;
+        }
+
+        if (other.gameObject.tag == "Twig") {
+            damHealth += lowHeal;
+            Destroy(other.gameObject);
+            healthText.color = Color.green;
         }
 
         //Debug.Log(damHealth);
@@ -58,7 +69,7 @@ public class Dam : MonoBehaviour
 
 
 
-        if (damHealth >= 40)
+        if (damHealth >= 400)
         {
             damNoDMG.SetActive(true);
             damLowDMG.SetActive(false);
@@ -66,7 +77,7 @@ public class Dam : MonoBehaviour
             damDestroyed.SetActive(false);
             Debug.Log("Health is " + damHealth);
         }
-        if (Enumerable.Range(20, 39).Contains((int)damHealth))
+        if (Enumerable.Range(200, 390).Contains((int)damHealth))
         {
             damNoDMG.SetActive(false);
             damLowDMG.SetActive(true);
@@ -74,7 +85,7 @@ public class Dam : MonoBehaviour
             damDestroyed.SetActive(false);
             Debug.Log("Health is " + damHealth);
         }
-        if (Enumerable.Range(10, 19).Contains((int)damHealth))
+        if (Enumerable.Range(100, 190).Contains((int)damHealth))
         {
             damNoDMG.SetActive(false);
             damLowDMG.SetActive(false);

@@ -27,7 +27,7 @@ public class PickupSpawner : MonoBehaviour
         for (int i = 0; i <= maxItemCount; i++)
         {
             int randObject = Random.Range(0, 6);
-            Instantiate(pickupPool[randObject], new Vector3(Random.Range(-32, 32), 10, Random.Range(-32, 32)), pickupPool[randObject].transform.rotation);
+            Instantiate(pickupPool[randObject], new Vector3(Random.Range(-32, 32), 2, Random.Range(-32, 32)), pickupPool[randObject].transform.rotation);
         }
         currentItemCount = maxItemCount;
     }

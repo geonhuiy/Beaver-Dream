@@ -12,9 +12,17 @@ public class Movement : MonoBehaviour
     {
         mainCamera = Camera.main;
         navMeshAgent = GetComponent<NavMeshAgent>();
+        navMeshAgent.updateRotation = false;
 
     }
-
+    /// <summary>
+    /// LateUpdate is called every frame, if the Behaviour is enabled.
+    /// It is called after all Update functions have been called.
+    /// </summary>
+    void LateUpdate()
+    {
+        transform.rotation = Quaternion.LookRotation(navMeshAgent.velocity.normalized);
+    }
     private void Update()
     {
         RaycastHit hit;

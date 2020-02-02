@@ -16,12 +16,16 @@ public class BeaverItemPickup : MonoBehaviour
 
     private void Update()
     {
-        if (hasObject)
+        if (currentHeldObj != null)
         {
-            currentHeldObj.transform.position = this.gameObject.transform.GetChild(0).transform.position;
-            Vector3 rotation = new Vector3(currentHeldObj.transform.eulerAngles.x, this.transform.eulerAngles.y, currentHeldObj.transform.eulerAngles.z);
-            currentHeldObj.transform.rotation = Quaternion.Euler(rotation);
-            //currentHeldObj.GetComponent<Collider>().enabled = false;
+            if (hasObject)
+            {
+                currentHeldObj.transform.position = this.gameObject.transform.GetChild(0).transform.position;
+                Vector3 rotation = new Vector3(currentHeldObj.transform.eulerAngles.x, this.transform.eulerAngles.y, currentHeldObj.transform.eulerAngles.z);
+                currentHeldObj.transform.rotation = Quaternion.Euler(rotation);
+                //currentHeldObj.GetComponent<Collider>().enabled = false;
+            }
         }
+
     }
 }
