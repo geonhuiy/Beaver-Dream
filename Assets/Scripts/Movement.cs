@@ -7,10 +7,12 @@ public class Movement : MonoBehaviour
 {
     private Camera mainCamera = null;
     private NavMeshAgent navMeshAgent = null;
+
     private void Awake()
     {
         mainCamera = Camera.main;
         navMeshAgent = GetComponent<NavMeshAgent>();
+
     }
 
     private void Update()
